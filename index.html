@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacar Aku ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Halaman Amplop -->
+    <div id="page-envelope" class="page active">
+        <h1 class="title-script">Press the Envelope 💌</h1>
+
+        <div class="envelope" onclick="openEnvelope()">
+            ✉️
+        </div>
+
+        <p class="subtitle">Tap untuk lanjut</p>
+    </div>
+
+    <!-- Menu -->
+    <div id="page-menu" class="page">
+        <h1 class="title-script">Choose the Surprise ✨</h1>
+
+        <div class="menu-grid">
+
+            <div class="menu-item" onclick="showPage('page-journey')">
+                <span class="icon">📷</span>
+                <p>Journey</p>
+            </div>
+
+            <div class="menu-item" onclick="showPage('page-moment')">
+                <span class="icon">💌</span>
+                <p>Moment</p>
+            </div>
+
+            <div class="menu-item" onclick="showPage('page-playlist')">
+                <span class="icon">🎵</span>
+                <p>Playlist</p>
+            </div>
+
+            <div class="menu-item" onclick="showPage('page-gift')">
+                <span class="icon">🎁</span>
+                <p>Gift</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Journey -->
+    <div id="page-journey" class="page">
+
+        <button class="btn-back" onclick="showPage('page-menu')">
+            ◀ BACK
+        </button>
+
+        <div class="photo-grid">
+
+            <div class="polaroid rotate-left">
+                <img src="cilla1.jpeg" alt="Foto 1">
+            </div>
+
+            <div class="polaroid rotate-right">
+                <img src="cilla2.jpeg" alt="Foto 2">
+            </div>
+
+            <div class="polaroid rotate-left">
+                <img src="cilla3.jpeg" alt="Foto 3">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Moment -->
+    <div id="page-moment" class="page">
+
+        <button class="btn-back" onclick="showPage('page-menu')">
+            ◀ BACK
+        </button>
+
+        <div class="letter-card">
+            <h2>Nurul Fatihah Hidayah 💙</h2>
+
+            <p>
+                Terimakasih sudah menerima aku apa adanya sayang.
+                Bahagia selalu ya.
+                Aku akan selalu ada buat kamu kapan pun itu. 🤍
+            </p>
+        </div>
+    </div>
+
+    <!-- Playlist -->
+    <div id="page-playlist" class="page">
+
+        <button class="btn-back" onclick="showPage('page-menu')">
+            ◀ BACK
+        </button>
+
+        <div class="music-card">
+
+            <h2>fallingforyou</h2>
+            <p>The 1975</p>
+
+            <audio id="myAudio" controls preload="auto">
+                <source src="./lagu.mp3" type="audio/mpeg">
+                Browser kamu tidak mendukung audio.
+            </audio>
+
+        </div>
+    </div>
+
+    <!-- Gift -->
+    <div id="page-gift" class="page">
+
+        <button class="btn-back" onclick="showPage('page-menu')">
+            ◀ BACK
+        </button>
+
+        <div class="gift-box">
+            <h2>🎉 Kejutan Buat Sayang 🎉</h2>
+
+            <p>
+                Semoga kamu selalu bahagia, sehat, dan semua impian kamu tercapai.
+                Aku bersyukur bisa kenal sama kamu. 💙
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
